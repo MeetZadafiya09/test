@@ -1,0 +1,1 @@
+export const REDIS_BANNER_KEY = "app:banner";

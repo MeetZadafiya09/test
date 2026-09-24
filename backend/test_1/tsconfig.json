@@ -1,0 +1,57 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "es2022",
+    "moduleResolution": "nodenext",
+    //  "types": [],
+    // For nodejs:
+    "lib": [
+      "es2023"
+    ],
+    "types": [
+      "node"
+    ],
+    "noImplicitAny": true, /* Enable error reporting for expressions and declarations with an implied 'any' type */
+    "strictNullChecks": true, /* When type checking, take into account 'null' and 'undefined' */
+    "noUnusedLocals": true, /* Enable error reporting when local variables aren't read */
+    "noUnusedParameters": true, /* Raise an error when a function parameter isn't read */
+    "noImplicitReturns": true,
+    
+    // and npm install -D @types/node
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+    // Recommended Options
+    "strict": true,
+    // "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
